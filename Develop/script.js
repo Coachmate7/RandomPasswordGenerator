@@ -37,4 +37,18 @@ function generatePassword(){
     //if conditions are met the user will not be prompted again to choose how many characters
     conditions = true; 
   }
+  }while(!conditions);
+
+    //ask the user desired variables for password
+    var lowerCaseChars = confirm("Would you like Lower case characters in your password?");
+    var upperCaseChars = confirm("Would you like Upper case characters in your password?");
+    var symbolChars = confirm("Would you like special characters in your password?");
+    var numericChars = confirm("Would you like numbers in your password?")
+
+    var i;
+    var sectionlength;
+
+if(!upperCaseChars && !lowerCaseChars && !symbolChars && !numericChars){
+  alert("Cannot generate password. you will need atleast one option selected.");
+}
 }
