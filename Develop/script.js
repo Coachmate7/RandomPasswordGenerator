@@ -62,22 +62,22 @@ function generatePassword(){
       for(i = 0; i < passwordLength;){
         //if lower case variable is chosen lower case characters will be included in the password 
         if(lowerCase){
-          pass = pass.concat(lowerCase.charAt(Math.floor(Math.floor() * lowerCase.length)).toString());
+          pass = pass.concat(lowerCase.charAt(Math.floor(Math.random() * lowerCase.length)).toString());
           i++;
         }
         //if upper case variable is chosen upper case characters will be included in the password 
         if(upperCase && i < passwordLength){
-          pass = pass.concat(upperCase.charAt(Math.floor(Math.floor() * upperCase.length)).toString());
+          pass = pass.concat(upperCase.charAt(Math.floor(Math.random() * upperCase.length)).toString());
           i++;
         }     
         //if symbol variable is chosen symbol characters will be included in the password 
         if(symbols && i < passwordLength){
-          pass = pass.concat(symbols.charAt(Math.floor(Math.floor() * symbols.length)).toString());
+          pass = pass.concat(symbols.charAt(Math.floor(Math.random() * symbols.length)).toString());
           i++;
         }
         //if numeric variable is chosen numeric characters will be included in the password 
         if(numeric && i < passwordLength){
-          pass = pass.concat(numeric.charAt(Math.floor(Math.floor() * numeric.length)).toString());
+          pass = pass.concat(numeric.charAt(Math.floor(Math.random() * numeric.length)).toString());
           i++;
       }
     }
